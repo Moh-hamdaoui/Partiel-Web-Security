@@ -1,5 +1,6 @@
 <h2>Modifier votre profil</h2>
 <form method="POST" action="/edit-profile">
   <input name="username" placeholder="Nouveau nom d'utilisateur" />
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
   <button type="submit">Valider</button>
 </form>

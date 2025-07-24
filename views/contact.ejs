@@ -1,6 +1,7 @@
 <h2>Laissez un message</h2>
 <form method="POST" action="/contact">
   <textarea name="message"></textarea>
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
   <button type="submit">Envoyer</button>
 </form>
 
